@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import Flat from './flat';
-import flats from '../../data/flats';
+import App from './app';
 
 
 class FlatList extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div className="flat-list">
-        <Flat />
+        {this.props.flatlist.map((flat) => <Flat flat={flat} key={flat.imageUrl} selectFlat={this.props.selectFlat} />)}
       </div>
-      );
+    );
   }
 }
 
