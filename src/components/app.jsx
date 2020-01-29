@@ -37,7 +37,7 @@ class App extends Component {
         </div>
         <div className="map-container">
           <GoogleMapReact
-            bootstrapURLKeys={{ key: 'AIzaSyCMcgy3cPL-nLOHA4T_Mgk-dcD2u_6O15U' }}
+            //bootstrapURLKeys={{ key: 'AIzaSyCMcgy3cPL-nLOHA4T_Mgk-dcD2u_6O15U' }}
             defaultCenter={
               {
                 lat: this.state.lat,
